@@ -28,6 +28,9 @@ function transformStateWithClones(state, actions) {
       case OPERATION_CLEAR:
         stateCopy = {};
         break;
+
+      default:
+        break;
     }
 
     stateHistory.push({ ...stateCopy });
